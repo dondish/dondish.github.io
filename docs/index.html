@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <meta name="twitter:title" content="DonBot - Discord Multipurpose Bot" />
+    <meta name="twitter:description" content="View docs, invite and more..." />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="../src/docs.js" type="application/ecmascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <meta charset="utf-8">
+    <title>DonBot - Discord Multipurpose Bot</title>
+</head>
+<body>
+<nav class="navbar is-light is-overlay" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="..">
+            <img src="../images/DonBot%20logo.png" width="112" height="28" alt="DonBot">
+        </a>
+        <div class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="">
+                Documentation
+            </a>
+            <a class="navbar-item" href="https://discordapp.com/oauth2/authorize?client_id=420517675509350400&permissions=36924481&scope=bot">
+                Add to Discord
+            </a>
+        </div>
+        <div class="navbar-end">
+            <a class="navbar-item" href="https://www.patreon.com/dondish">
+                <i class="fab fa-patreon"></i>
+            </a>
+            <a class="navbar-item" href="https://discord.gg/pEKkg9r%E2%80%8B">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- Use columns only for desktops. -->
+<div class="columns is-gapless is-hidden-touch is-dark is-bold">
+    <div class="column is-one-quarter">
+        <section class="hero is-fullheight is-dark is-bold is-clipped">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">Documentation</h1>
+                    <aside class="menu">
+                        <p class="menu-label">Commands:</p>
+                        <ul class="menu-list">
+                            <li><a href="#music">Music</a></li>
+                            <li><a href="#moderation">Moderation</a></li>
+                            <li><a href="#general">General</a></li>
+                            <li><a href="#fun">Fun</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="column">
+        <section class="hero is-fullheight is-dark">
+            <div class="hero-body">
+                <div class="container">
+                    <div id="music">
+                        <h1 class="title">Music Commands:</h1>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                    <th>Usage</th>
+                                    <th>Aliases</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>play</td>
+                                    <td>Plays music from youtube or given url. if there are no arguments it resumes the player</td>
+                                    <td>^play &lturl/words&gt</td>
+                                    <td>p</td>
+                                </tr>
+                                <tr>
+                                    <td>join</td>
+                                    <td>Joins a voice channel </td>
+                                    <td>^join</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>stop</td>
+                                    <td>Stops the music player</td>
+                                    <td>^stop</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>pause</td>
+                                    <td>Pauses the currently playing track</td>
+                                    <td>^pause</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>resume</td>
+                                    <td>Resumes the track if paused</td>
+                                    <td>^resume</td>
+                                    <td>unpause</td>
+                                </tr>
+                                <tr>
+                                    <td>queue</td>
+                                    <td>Shows the queue </td>
+                                    <td>^queue</td>
+                                    <td>q</td>
+                                </tr>
+                                <tr>
+                                    <td>clear</td>
+                                    <td>Clears the queue  </td>
+                                    <td>^clear</td>
+                                    <td></td>
+                                <tr>
+                                    <td>seek</td>
+                                    <td>Seeks to a point in the track </td>
+                                    <td>^seek [hh:[mm:[ss]]]</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>export</td>
+                                    <td>Exports the playlist to hastebin or wastebin</td>
+                                    <td>^export</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>shuffle</td>
+                                    <td>Shuffles the queue </td>
+                                    <td>^shuffle</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>skip</td>
+                                    <td>Skips the currently playing song </td>
+                                    <td>^skip &ltnumber of songs to skip&gt</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>np</td>
+                                    <td>Shows the currently playing song </td>
+                                    <td>^np</td>
+                                    <td>nowplaying | playing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="moderation">
+                        <h1 class="title">Moderation Commands:</h1>
+
+                    </div>
+                    <div id="general">
+                        <h1 class="title">General Commands:</h1>
+
+                    </div>
+                    <div id="fun">
+                        <h1 class="title">Fun Commands:</h1>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>

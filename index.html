@@ -1,32 +1,37 @@
 <!DOCTYPE html>
+<!-- index.html
+Author: Oded "dondish" Shapira
+Created: 26/03/2018
+Last Updated: 26/03/2018
+All rights reserved to Oded Shapira -->
 <html>
 <head>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <meta name="twitter:title" content="DonBot - Discord Multipurpose Bot" />
     <meta name="twitter:description" content="View docs, invite and more..." />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="src/home.js" type="application/ecmascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <meta charset="utf-8">
-
     <title>DonBot - Discord Multipurpose Bot</title>
 </head>
 <body>
     <nav class="navbar is-light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item">
+            <a class="navbar-item" href="">
                 <img src="images/DonBot%20logo.png" width="112" height="28" alt="DonBot">
             </a>
-            <div class="navbar-burger">
-                <span>Documentation</span>
-                <span>Add to Discord</span>
-                <span>Patreon</span>
-                <span>Support Server</span>
+            <div class="navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item" href="docs">
                     Documentation
                 </a>
                 <a class="navbar-item" href="https://discordapp.com/oauth2/authorize?client_id=420517675509350400&permissions=36924481&scope=bot">
@@ -43,6 +48,7 @@
             </div>
         </div>
     </nav>
+    <!-- About -->
     <section class="hero is-dark">
         <div class="hero-body">
             <div class="container">
@@ -67,6 +73,7 @@
             </div>
         </div>
     </section>
+    <!-- Music -->
     <section class="hero is-light">
         <div class="hero-body">
             <div class="container">
@@ -82,6 +89,7 @@
             </div>
         </div>
     </section>
+    <!-- Moderation -->
     <section class="hero is-dark">
         <div class="hero-body">
             <div class="container">
@@ -100,6 +108,26 @@
                     <p>and more...</p>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- More -->
+    <section class="hero is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Always Updated</h1>
+                <div class="content">
+                    <p>
+                        I (dondish) test the bot by myself and my friends and it usually should be bug-free.<br>
+                        If there are any problems, bugs, or you just want to suggest something, <a href="https://discord.gg/pEKkg9r%E2%80%8B">DonBot Central</a> is the place!<br>
+                        Many features will roll out as the time goes, and this website will be updated with the new features as well.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-dark">
+        <div class="hero-body">
+        <!-- Just a little spacer-->
         </div>
     </section>
 </body>
