@@ -156,7 +156,60 @@
                     </div>
                     <div id="moderation">
                         <h1 class="title">Moderation Commands:</h1>
-
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                                <th>Aliases</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>settings</td>
+                                <td>Manages guild settings</td>
+                                <td>^settings &ltoptions&gt &ltoptionArguments&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>welcomer</td>
+                                <td>Enable or disable welcomer</td>
+                                <td>^welcomer</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>purge</td>
+                                <td>Purges an amount of messages in the channel</td>
+                                <td>^purge &ltamount&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>mute</td>
+                                <td>Mutes a member so their messages will be deleted. 1 day by default</td>
+                                <td>^mute &ltuser&gt &lttimeInMinutes&gt &ltreason&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>unmute</td>
+                                <td>Unmutes a member</td>
+                                <td>^unmute &ltuser&gt &ltreason&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>softban</td>
+                                <td>Bans and then unbans a user to clear his messages.</td>
+                                <td>^softban &ltuser&gt &ltreason&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>warn</td>
+                                <td>Warning based commands</td>
+                                <td>^warn &lt@user mention/amount @user mention/clear @user mention&gt</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div id="general">
                         <h1 class="title">General Commands:</h1>
