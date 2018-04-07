@@ -12,21 +12,21 @@
     <title>DonBot - Discord Multipurpose Bot</title>
 </head>
 <body>
-<nav class="navbar is-light is-overlay" role="navigation" aria-label="main navigation">
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="..">
             <img src="../images/DonBot%20logo.png" width="112" height="28" alt="DonBot">
         </a>
-        <div class="navbar-burger">
+        <div class="navbar-burger" data-target="navMenu">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
-    <div class="navbar-menu">
+    <div class="navbar-menu" id="navMenu">
         <div class="navbar-start">
-            <a class="navbar-item" href="">
+            <a class="navbar-item" href="../docs">
                 Documentation
             </a>
             <a class="navbar-item" href="https://discordapp.com/oauth2/authorize?client_id=420517675509350400&permissions=36924481&scope=bot">
@@ -151,6 +151,36 @@
                                     <td>^np</td>
                                     <td>nowplaying | playing</td>
                                 </tr>
+                                <tr>
+                                    <td>repeat</td>
+                                    <td>Toggles between repeat modes </td>
+                                    <td>^repeat &ltmode&gt</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>reverse</td>
+                                    <td>Reverses the entire queue</td>
+                                    <td>^reverse</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>history</td>
+                                    <td>Shows the history of played songs</td>
+                                    <td>^history</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>remove</td>
+                                    <td> Remove a song from the queue at the given index </td>
+                                    <td>^remove &ltindex&gt</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>back</td>
+                                    <td>Returns one song backwards in the queue </td>
+                                    <td>^back</td>
+                                    <td></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -213,11 +243,145 @@
                     </div>
                     <div id="general">
                         <h1 class="title">General Commands:</h1>
-
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                                <th>Aliases</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>invite</td>
+                                <td>Invite link </td>
+                                <td>^invite</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>info</td>
+                                <td>Shows info about the bot </td>
+                                <td>^info</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ping</td>
+                                <td>Checks the bot's latency </td>
+                                <td>^ping</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>tag</td>
+                                <td>Tag based commands</td>
+                                <td>^tag &ltadd (key) (sentence) / remove (key) / key to get the tag&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>serverinfo</td>
+                                <td>Shows info about the server</td>
+                                <td>^serverinfo</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>math</td>
+                                <td>Calculate simple math queries, uses JS operators </td>
+                                <td>^math &ltquery&gt</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div id="fun">
                         <h1 class="title">Fun Commands:</h1>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                                <th>Aliases</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>random</td>
+                                <td>Generate random integer</td>
+                                <td>^random &ltstart&gt &ltend&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>choose</td>
+                                <td>Randomly chooses an item out of a list</td>
+                                <td>^choose &ltoption1&gt &ltoption2&gt etc...</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>roll</td>
+                                <td>Rolls the DonBot dice</td>
+                                <td>^roll</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>guess</td>
+                                <td>Fun guessing game with the bot </td>
+                                <td>^guess</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>xkcd</td>
+                                <td>Get a random xkcd comic or fetch by number </td>
+                                <td>^xkcd &lt(Optional) number of comic&gt</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
 
+                    </div>
+                    <div id="image">
+                        <h1 class="title">Image Commands:</h1>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Description</th>
+                                <th>Usage</th>
+                                <th>Aliases</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>autist</td>
+                                <td>Autist someone you hate</td>
+                                <td>^autist &luser mention/name&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>gay</td>
+                                <td>You know he is gay</td>
+                                <td>^gay &luser mention/name&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>soviet</td>
+                                <td>Tag a fellow comrade</td>
+                                <td>^soviet &luser mention/name&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>bot</td>
+                                <td>He has certain "problems" with captchas</td>
+                                <td>^bot &luser mention/name&gt</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>slav</td>
+                                <td>Slav another gopnik</td>
+                                <td>^slav &luser mention/name&gt</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
