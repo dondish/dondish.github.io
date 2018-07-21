@@ -55,6 +55,17 @@ header {
     border-bottom: 2px #3d3f42;
 }
 
+
+#linkstitle {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    text-align: center;
+    font-size: 48px;
+}
+
 #linkrow {
     position: relative;
     top: 24%;
