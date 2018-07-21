@@ -46,6 +46,7 @@ header {
     ------------------ PROJECTS ------------------
  */
 
+
 #projects {
     position: relative;
     height: 50vh;
@@ -140,4 +141,47 @@ header {
 
 .fa-3x:hover {
     color: #838383;
+}
+
+/**
+    ------------------ MOBILE ------------------
+ */
+
+
+@media screen and (max-width: 762px) {
+    #projects {
+        height: 130vh;
+    }
+
+    #projectsrow {
+        padding-top: 15px;
+    }
+
+    #links {
+        height: 90vh;
+    }
+
+    #linkstitle {
+        top: 15%;
+    }
+
+    #linkrow {
+        padding-top: 15px;
+    }
+
+    .link {
+        margin-bottom: 25px;
+    }
+
+    .card a {
+        font-size: 1.5rem;
+    }
+
+    .card-img-top {
+        height: 128px;
+        width: 128px;
+    }
+
+
+
 }
