@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*
+    Author: Oded Shapira
+    Creation Date: 21 July 2018
+    License: MIT
+ */
+
+/*
+    ------------------ GENERAL ------------------
+ */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    position: relative;
+}
+
+/*
+    ------------------ HEADER ------------------
+ */
+header {
+    height: 100vh;
+    background-color: #606163;
+    background-size: cover;
+}
+#headtext {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Align it at the center*/
+    color: floralwhite;
+    width: fit-content;
+    align-content: center;
+    text-align: center;
+}
+#head a {
+    font-size: 96px;
+}
+
+#head span {
+    font-size: 36px;
+}
+
+/*
+    ------------------ LINKS ------------------
+ */
+
+#links {
+    position: relative;
+    height: 100vh;
+    background-color: #d4d4d4;
+    background-size: cover;
+    color: #3d3f42; /* Premium blackish color */
+    border-bottom: 2px #3d3f42;
+}
+
+#linkrow {
+    position: relative;
+    top: 24%;
+    left: 10%;
+    width: 80%;
+}
+
+.border {
+    border-color: #3d3f42;
+}
+
+.spacer {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.link {
+    text-align: center;
+    font-size: 24px;
+}
+
+.fa-3x {
+    color: #3d3f42;
+}
+
+.fa-3x:hover {
+    color: #838383;
+}
