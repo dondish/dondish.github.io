@@ -11,7 +11,7 @@
  */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     height: 100vh;
     position: relative;
 }
@@ -43,20 +43,19 @@ header {
 }
 
 /*
-    ------------------ LINKS ------------------
+    ------------------ PROJECTS ------------------
  */
 
-#links {
+#projects {
     position: relative;
-    height: 100vh;
+    height: 50vh;
     background-color: #d4d4d4;
     background-size: cover;
     color: #3d3f42; /* Premium blackish color */
-    border-bottom: 2px #3d3f42;
+    border-bottom: thin solid #3d3f42;
 }
 
-
-#linkstitle {
+#projectstitle {
     position: absolute;
     top: 10%;
     left: 50%;
@@ -66,9 +65,57 @@ header {
     font-size: 48px;
 }
 
-#linkrow {
+#projectsrow {
     position: relative;
     top: 24%;
+    left: 10%;
+    width: 80%;
+}
+
+.card {
+    background-color: transparent;
+    border: transparent;
+}
+
+.card a {
+    font-size: 2.5rem;
+    color: #3d3f42;
+    text-decoration: none;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+}
+
+/*
+    ------------------ LINKS ------------------
+ */
+
+#links {
+    position: relative;
+    height: 50vh;
+    background-color: #d4d4d4;
+    background-size: cover;
+    color: #3d3f42; /* Premium blackish color */
+    border-bottom: 2px #3d3f42;
+}
+
+
+#linkstitle {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    text-align: center;
+    font-size: 48px;
+}
+
+#linkrow {
+    position: relative;
+    top: 36%;
     left: 10%;
     width: 80%;
 }
